@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-image: url('./assets/brett-jordan-981LUgzWE2E-unsplash.jpg');
+background-size: cover;
+}
+.MainDiv {
+  width: 50%;
+  height: 60%;
+  border: 3px solid white;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.BrowseGenres {
+  width: 30%;
+  height: 30%;
+  border-radius: 5%;
+  text-align: center;
+  background-color: rgb(186, 252, 3);
+  font-size: x-large;
+  font-weight: 500;
+}
+.FeaturedPlaylist {
+  width: 30%;
+  height: 30%;
+
+  border-radius: 5%;
+  text-align: center;
+  background-color: rgb(252, 3, 240);
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.ReleasedSongs {
+  width: 30%;
+  height: 30%;
+
+  border-radius: 5%;
+  text-align: center;
+  background-color: rgb(3, 252, 223);
+  font-size: x-large;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .MainDiv {
+    width: 50%;
+    height: 60%;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5%;
+  }
+  .BrowseGenres, .FeaturedPlaylist, .ReleasedSongs{
+    width: 70%;
+  }  
+
+}
