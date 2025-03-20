@@ -5,8 +5,8 @@
 }
 
 #root {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   background-color: black;
   color: white;
   display: flex;
@@ -14,7 +14,11 @@
   align-items: center;
 background-image: url('./assets/brett-jordan-981LUgzWE2E-unsplash.jpg');
 background-size: cover;
+
 }
+
+
+
 .MainDiv {
   width: 50%;
   height: 60%;
@@ -27,6 +31,12 @@ background-size: cover;
   cursor: pointer;
 }
 
+.subHeading{
+  font-size: xx-large;
+  color: white;
+  cursor: pointer;
+}
+
 .BrowseGenres {
   width: 30%;
   height: 30%;
@@ -36,6 +46,25 @@ background-size: cover;
   font-size: x-large;
   font-weight: 500;
 }
+
+.FeItemCard{
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  color: black;
+
+  
+}
+.FeItemsCards{
+  list-style-type: none;
+  opacity: 0.75;
+}
+
+.Heading{
+  font-size: xx-large;
+  color: white;
+}
+
 .FeaturedPlaylist {
   width: 30%;
   height: 30%;
@@ -56,8 +85,39 @@ background-size: cover;
   background-color: rgb(3, 252, 223);
   font-size: x-large;
   font-weight: 500;
+
 }
 
+.GeItemCard{
+  margin-top: 25%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: space-between;  
+  column-gap: 40px;
+}
+
+
+.ItemCard{
+  display: grid;
+  
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 10%;
+  background-color: black;
+  opacity: 0.75;
+ justify-content: space-around;
+}
+
+.ItemCard>li{
+  text-align: center;
+}
+
+li{
+  text-align: center;
+}
+
+.ItemsCards{
+  list-style-type: none;
+}
 @media only screen and (max-width: 600px) {
 
   .MainDiv {
@@ -73,6 +133,7 @@ background-size: cover;
   }
   .BrowseGenres, .FeaturedPlaylist, .ReleasedSongs{
     width: 70%;
-  }  
+  } 
+
 
 }
